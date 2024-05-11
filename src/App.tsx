@@ -17,10 +17,10 @@ function App() {
   ]);
 
   return (
-    <div className=''>
+    <div className="bg-[#FFFBDA] min-h-[100vh]">
       <RouterProvider router={router} />
     </div>
-  )
+  );
 }
 
 export default App
