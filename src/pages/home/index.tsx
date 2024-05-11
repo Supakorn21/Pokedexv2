@@ -5,7 +5,7 @@ import SearchForm from '@/components/SearchForm';
 const HomePage = () => {
 
     useEffect(() => {
-        callData();
+        // callData();
     } ,[])
 
     const callData = async () => {

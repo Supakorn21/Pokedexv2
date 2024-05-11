@@ -20,7 +20,7 @@ function SearchForm() {
         });
     }
 
-    const generateTypeOptions = () => {
+    const getTypeOptions = () => {
         return typesList.map((item, index) => {
             const typeKey = `type-key-${index}`;
             return {
@@ -31,7 +31,7 @@ function SearchForm() {
         });
     }
 
-    const generateSortOptions = () => {
+    const getSortByOptions = () => {
         return sortList.map((item, index) => {
             const sortKey = `sort-key-${index}`;
             return {
@@ -80,7 +80,7 @@ function SearchForm() {
           <Select
             id="type"
             placeholder="Select Type"
-            options={generateTypeOptions()}
+            options={getTypeOptions()}
             style={selectStyles}
           />
         </div>
@@ -95,7 +95,7 @@ function SearchForm() {
           <Select
             id="sort_by"
             placeholder="Sort By"
-            options={generateSortOptions()}
+            options={getSortByOptions()}
             style={selectStyles}
           />
         </div>
